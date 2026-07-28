@@ -21,7 +21,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
       <div className="flex h-screen w-screen items-center justify-center bg-[#0a0b10]">
         <div className="flex flex-col items-center gap-4">
           <div className="spinner"></div>
-          <p className="text-gray-400 text-sm animate-pulse">Loading VLCSMS session...</p>
+          <p className="text-gray-400 text-sm animate-pulse">Loading session...</p>
         </div>
       </div>
     );

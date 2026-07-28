@@ -8,11 +8,11 @@ export const GradesSystem: React.FC = () => {
   const [maxMarks, setMaxMarks] = useState(100);
 
   const [studentMarks, setStudentMarks] = useState<any[]>([
-    { id: '1', name: 'Alice Smith', adm: 'VLC/2026/0001', score: 85 },
-    { id: '2', name: 'Bob Jones', adm: 'VLC/2026/0002', score: 72 },
-    { id: '3', name: 'Charlie Miller', adm: 'VLC/2026/0003', score: 94 },
-    { id: '4', name: 'Diana Watson', adm: 'VLC/2026/0004', score: 45 },
-    { id: '5', name: 'Ethan Carter', adm: 'VLC/2026/0005', score: 68 }
+    { id: '1', name: 'Alice Smith', adm: 'ADM/2026/0001', score: 85 },
+    { id: '2', name: 'Bob Jones', adm: 'ADM/2026/0002', score: 72 },
+    { id: '3', name: 'Charlie Miller', adm: 'ADM/2026/0003', score: 94 },
+    { id: '4', name: 'Diana Watson', adm: 'ADM/2026/0004', score: 45 },
+    { id: '5', name: 'Ethan Carter', adm: 'ADM/2026/0005', score: 68 }
   ]);
 
   const [saved, setSaved] = useState(false);

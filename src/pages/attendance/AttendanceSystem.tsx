@@ -7,11 +7,11 @@ export const AttendanceSystem: React.FC = () => {
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
 
   const [studentList, setStudentList] = useState<any[]>([
-    { id: '1', name: 'Alice Smith', adm: 'VLC/2026/0001', status: 'present' },
-    { id: '2', name: 'Bob Jones', adm: 'VLC/2026/0002', status: 'present' },
-    { id: '3', name: 'Charlie Miller', adm: 'VLC/2026/0003', status: 'present' },
-    { id: '4', name: 'Diana Watson', adm: 'VLC/2026/0004', status: 'absent' },
-    { id: '5', name: 'Ethan Carter', adm: 'VLC/2026/0005', status: 'present' }
+    { id: '1', name: 'Alice Smith', adm: 'ADM/2026/0001', status: 'present' },
+    { id: '2', name: 'Bob Jones', adm: 'ADM/2026/0002', status: 'present' },
+    { id: '3', name: 'Charlie Miller', adm: 'ADM/2026/0003', status: 'present' },
+    { id: '4', name: 'Diana Watson', adm: 'ADM/2026/0004', status: 'absent' },
+    { id: '5', name: 'Ethan Carter', adm: 'ADM/2026/0005', status: 'present' }
   ]);
 
   const [saved, setSaved] = useState(false);

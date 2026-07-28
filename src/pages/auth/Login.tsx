@@ -46,7 +46,7 @@ export const Login: React.FC = () => {
           </div>
           <h1 className="text-2xl font-bold text-white text-center">Welcome Back</h1>
           <p className="text-gray-400 text-xs mt-1 text-center">
-            Sign in to Vibrant Legend College SMS
+            Sign in to Apex School Management System
           </p>
         </div>
 

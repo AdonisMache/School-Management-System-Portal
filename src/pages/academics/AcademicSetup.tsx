@@ -137,7 +137,7 @@ export const AcademicSetup: React.FC = () => {
           Academic Structure Configuration
         </h2>
         <p className="text-xs text-gray-400 mt-1">
-          Configure class levels, streams partitions, and course catalogs for VLCSMS.
+          Configure class levels, streams partitions, and course catalogs for the student management system.
         </p>
       </div>
 

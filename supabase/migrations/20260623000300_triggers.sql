@@ -1,4 +1,4 @@
--- VLCSMS PostgreSQL Triggers Migration Script
+-- Apex SMS PostgreSQL Triggers Migration Script
 
 -- =========================================================================
 -- TRIGGER 1: SYNC USER PROFILE ON auth.users CREATION

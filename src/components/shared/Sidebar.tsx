@@ -97,8 +97,8 @@ export const Sidebar: React.FC = () => {
           <School className="w-6 h-6 text-indigo-400" />
         </div>
         <div>
-          <h2 className="text-md font-bold tracking-tight text-white leading-none">VLCSMS</h2>
-          <span className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Vibrant Legend</span>
+          <h2 className="text-md font-bold tracking-tight text-white leading-none">Apex SMS</h2>
+          <span className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Management Portal</span>
         </div>
       </div>
 

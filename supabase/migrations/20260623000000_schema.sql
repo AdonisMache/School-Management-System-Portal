@@ -1,4 +1,4 @@
--- VLCSMS PostgreSQL Database Initialization Schema
+-- Apex SMS PostgreSQL Database Initialization Schema
 -- Enabling UUID and Extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 

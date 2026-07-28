@@ -1,4 +1,4 @@
--- VLCSMS Row Level Security (RLS) Policies Migration Script
+-- Apex SMS Row Level Security (RLS) Policies Migration Script
 
 -- =========================================================================
 -- MODULE 1: AUTHENTICATION AND RBAC TABLES

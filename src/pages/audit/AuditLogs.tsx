@@ -4,11 +4,11 @@ import { ScrollText, Search, Activity, CalendarDays } from 'lucide-react';
 
 export const AuditLogs: React.FC = () => {
   const [logs, setLogs] = useState<any[]>([
-    { id: '1', user: 'admin@vlc.edu', action: 'CREATE_USER', details: 'Added teacher profile for EMP2026/004', ip: '192.168.1.102', timestamp: '2026-06-23 20:12:44' },
-    { id: '2', user: 'teacher@vlc.edu', action: 'GRADE_ENTRY', details: 'Uploaded Mid-Term marks for Form 4 Chemistry', ip: '192.168.1.105', timestamp: '2026-06-23 18:34:12' },
-    { id: '3', user: 'accountant@vlc.edu', action: 'FEE_PAYMENT', details: 'Recorded payment of $400 for Alice Smith', ip: '192.168.1.108', timestamp: '2026-06-23 16:22:01' },
-    { id: '4', user: 'admin@vlc.edu', action: 'PASSWORD_RESET', details: 'Forced password change reset flag on first login for student@vlc.edu', ip: '192.168.1.102', timestamp: '2026-06-23 14:10:55' },
-    { id: '5', user: 'admin@vlc.edu', action: 'LOGIN', details: 'User session active', ip: '192.168.1.102', timestamp: '2026-06-23 13:00:00' }
+    { id: '1', user: 'admin@school.edu', action: 'CREATE_USER', details: 'Added teacher profile for EMP2026/004', ip: '192.168.1.102', timestamp: '2026-06-23 20:12:44' },
+    { id: '2', user: 'teacher@school.edu', action: 'GRADE_ENTRY', details: 'Uploaded Mid-Term marks for Form 4 Chemistry', ip: '192.168.1.105', timestamp: '2026-06-23 18:34:12' },
+    { id: '3', user: 'accountant@school.edu', action: 'FEE_PAYMENT', details: 'Recorded payment of $400 for Alice Smith', ip: '192.168.1.108', timestamp: '2026-06-23 16:22:01' },
+    { id: '4', user: 'admin@school.edu', action: 'PASSWORD_RESET', details: 'Forced password change reset flag on first login for student@school.edu', ip: '192.168.1.102', timestamp: '2026-06-23 14:10:55' },
+    { id: '5', user: 'admin@school.edu', action: 'LOGIN', details: 'User session active', ip: '192.168.1.102', timestamp: '2026-06-23 13:00:00' }
   ]);
 
   const [searchTerm, setSearchTerm] = useState('');

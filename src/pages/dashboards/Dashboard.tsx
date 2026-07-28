@@ -360,7 +360,7 @@ export const Dashboard: React.FC = () => {
             Hello, {user?.email?.split('@')[0]}
           </h1>
           <p className="text-gray-400 text-sm max-w-lg">
-            Welcome back to the VLCSMS dashboard. All access controls are active under dynamic database policies.
+            Welcome back to the Apex SMS dashboard. All access controls are active under dynamic database policies.
           </p>
         </div>
         <div className="shrink-0">

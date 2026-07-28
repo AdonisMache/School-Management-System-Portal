@@ -1,4 +1,4 @@
--- VLCSMS Helper Functions for RLS Policies and Dynamic Role-Permission Checking
+-- Apex SMS Helper Functions for RLS Policies and Dynamic Role-Permission Checking
 
 -- Helper to check if a user possesses a specific permission
 CREATE OR REPLACE FUNCTION user_has_permission(p_user_id UUID, p_permission VARCHAR)

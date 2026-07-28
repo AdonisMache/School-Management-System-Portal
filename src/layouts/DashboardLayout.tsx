@@ -44,7 +44,7 @@ export const DashboardLayout: React.FC = () => {
               </div>
               <div className="hidden md:block">
                 <p className="text-xs font-semibold text-white leading-tight">{user?.email?.split('@')[0]}</p>
-                <p className="text-[9px] text-gray-500">VLCSMS Account</p>
+                <p className="text-[9px] text-gray-500">Apex SMS Account</p>
               </div>
             </div>
           </div>

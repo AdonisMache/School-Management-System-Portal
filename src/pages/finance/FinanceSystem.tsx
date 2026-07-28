@@ -11,11 +11,11 @@ export const FinanceSystem: React.FC = () => {
   ]);
 
   const [studentAccounts, setStudentAccounts] = useState<any[]>([
-    { id: '1', name: 'Alice Smith', adm: 'VLC/2026/0001', due: 1500, paid: 1200, balance: 300 },
-    { id: '2', name: 'Bob Jones', adm: 'VLC/2026/0002', due: 1500, paid: 1500, balance: 0 },
-    { id: '3', name: 'Charlie Miller', adm: 'VLC/2026/0003', due: 1500, paid: 800, balance: 700 },
-    { id: '4', name: 'Diana Watson', adm: 'VLC/2026/0004', due: 1500, paid: 500, balance: 1000 },
-    { id: '5', name: 'Ethan Carter', adm: 'VLC/2026/0005', due: 1500, paid: 1500, balance: 0 }
+    { id: '1', name: 'Alice Smith', adm: 'ADM/2026/0001', due: 1500, paid: 1200, balance: 300 },
+    { id: '2', name: 'Bob Jones', adm: 'ADM/2026/0002', due: 1500, paid: 1500, balance: 0 },
+    { id: '3', name: 'Charlie Miller', adm: 'ADM/2026/0003', due: 1500, paid: 800, balance: 700 },
+    { id: '4', name: 'Diana Watson', adm: 'ADM/2026/0004', due: 1500, paid: 500, balance: 1000 },
+    { id: '5', name: 'Ethan Carter', adm: 'ADM/2026/0005', due: 1500, paid: 1500, balance: 0 }
   ]);
 
   const [recentPayments, setRecentPayments] = useState<any[]>([

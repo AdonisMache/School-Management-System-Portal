@@ -8,11 +8,11 @@ export const StudentDirectory: React.FC = () => {
   const isAdmin = hasRole('school_admin');
 
   const [students, setStudents] = useState<any[]>([
-    { id: '1', admission_number: 'VLC/2026/0001', first_name: 'Alice', last_name: 'Smith', class: 'Form 4', stream: 'Stream A', gender: 'female', status: 'active', parent: 'John Smith' },
-    { id: '2', admission_number: 'VLC/2026/0002', first_name: 'Bob', last_name: 'Jones', class: 'Form 2', stream: 'Stream B', gender: 'male', status: 'active', parent: 'Sarah Jones' },
-    { id: '3', admission_number: 'VLC/2026/0003', first_name: 'Charlie', last_name: 'Miller', class: 'Form 6', stream: 'Stream A', gender: 'male', status: 'active', parent: 'Robert Miller' },
-    { id: '4', admission_number: 'VLC/2026/0004', first_name: 'Diana', last_name: 'Watson', class: 'Form 3', stream: 'Stream C', gender: 'female', status: 'suspended', parent: 'Emily Watson' },
-    { id: '5', admission_number: 'VLC/2026/0005', first_name: 'Ethan', last_name: 'Carter', class: 'Form 5', stream: 'Stream B', gender: 'male', status: 'active', parent: 'David Carter' }
+    { id: '1', admission_number: 'ADM/2026/0001', first_name: 'Alice', last_name: 'Smith', class: 'Form 4', stream: 'Stream A', gender: 'female', status: 'active', parent: 'John Smith' },
+    { id: '2', admission_number: 'ADM/2026/0002', first_name: 'Bob', last_name: 'Jones', class: 'Form 2', stream: 'Stream B', gender: 'male', status: 'active', parent: 'Sarah Jones' },
+    { id: '3', admission_number: 'ADM/2026/0003', first_name: 'Charlie', last_name: 'Miller', class: 'Form 6', stream: 'Stream A', gender: 'male', status: 'active', parent: 'Robert Miller' },
+    { id: '4', admission_number: 'ADM/2026/0004', first_name: 'Diana', last_name: 'Watson', class: 'Form 3', stream: 'Stream C', gender: 'female', status: 'suspended', parent: 'Emily Watson' },
+    { id: '5', admission_number: 'ADM/2026/0005', first_name: 'Ethan', last_name: 'Carter', class: 'Form 5', stream: 'Stream B', gender: 'male', status: 'active', parent: 'David Carter' }
   ]);
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -225,7 +225,7 @@ export const StudentDirectory: React.FC = () => {
               required
               value={admNo}
               onChange={(e) => setAdmNo(e.target.value)}
-              placeholder="Admission Number (e.g. VLC/2026/0006)"
+              placeholder="Admission Number (e.g. ADM/2026/0006)"
               className="bg-[#121420]/60 border border-[rgba(255,255,255,0.08)] rounded-xl px-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none"
             />
             <input

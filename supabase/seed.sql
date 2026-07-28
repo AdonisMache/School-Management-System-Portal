@@ -1,4 +1,4 @@
--- VLCSMS Seed Data Scripts
+-- Apex SMS Seed Data Scripts
 -- Populate system definitions and test records
 
 -- 1. Roles Seed
