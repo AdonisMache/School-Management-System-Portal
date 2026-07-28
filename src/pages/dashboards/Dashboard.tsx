@@ -38,7 +38,7 @@ export const Dashboard: React.FC = () => {
   const renderSchoolAdmin = () => (
     <div className="space-y-6">
       {/* Metrics Row */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {[
           { label: 'Total Students', value: '1,248', icon: Users, color: 'text-indigo-400' },
           { label: 'Total Teachers', value: '84', icon: GraduationCap, color: 'text-indigo-400' },
@@ -82,7 +82,7 @@ export const Dashboard: React.FC = () => {
 
           <div className="pt-2">
             <h4 className="text-xs font-bold text-white mb-2">Quick Administration Tools</h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
               {[
                 { label: 'Access Audit Logs', href: '/audit' },
                 { label: 'Record Fee Payment', href: '/finance' },
