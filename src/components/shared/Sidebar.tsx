@@ -14,10 +14,16 @@ import {
   ScrollText, 
   Megaphone, 
   LogOut,
-  School
+  School,
+  X
 } from 'lucide-react';
 
-export const Sidebar: React.FC = () => {
+interface SidebarProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   const { hasPermission, signOut, user, roles } = useAuth();
 
   const menuItems = [
@@ -90,17 +96,35 @@ export const Sidebar: React.FC = () => {
   ];
 
   return (
-    <aside className="w-64 glass-panel border-r border-[rgba(255,255,255,0.08)] flex flex-col h-screen fixed left-0 top-0 z-30">
-      {/* Brand Header */}
-      <div className="p-6 border-b border-[rgba(255,255,255,0.08)] flex items-center gap-3">
-        <div className="bg-indigo-600/20 p-2 rounded-lg border border-indigo-500/30">
-          <School className="w-6 h-6 text-indigo-400" />
+    <>
+      {/* Mobile Backdrop */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden"
+          onClick={onClose}
+        />
+      )}
+
+      <aside className={`w-64 glass-panel border-r border-[rgba(255,255,255,0.08)] flex flex-col h-screen fixed left-0 top-0 z-50 transition-transform duration-300 lg:translate-x-0 ${
+        isOpen ? 'translate-x-0' : '-translate-x-full'
+      }`}>
+        {/* Brand Header */}
+        <div className="p-6 border-b border-[rgba(255,255,255,0.08)] flex items-center gap-3 relative">
+          <div className="bg-indigo-600/20 p-2 rounded-lg border border-indigo-500/30">
+            <School className="w-6 h-6 text-indigo-400" />
+          </div>
+          <div>
+            <h2 className="text-md font-bold tracking-tight text-white leading-none">Apex SMS</h2>
+            <span className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Management Portal</span>
+          </div>
+          
+          <button 
+            onClick={onClose} 
+            className="absolute right-4 top-1/2 -translate-y-1/2 lg:hidden text-gray-400 hover:text-white p-1 hover:bg-white/5 rounded-lg transition-all cursor-pointer"
+          >
+            <X className="w-5 h-5" />
+          </button>
         </div>
-        <div>
-          <h2 className="text-md font-bold tracking-tight text-white leading-none">Apex SMS</h2>
-          <span className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Management Portal</span>
-        </div>
-      </div>
 
       {/* Navigation Menus */}
       <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-1">
@@ -150,5 +174,6 @@ export const Sidebar: React.FC = () => {
         </button>
       </div>
     </aside>
+    </>
   );
 };
